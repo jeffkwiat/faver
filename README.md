@@ -29,18 +29,18 @@
 #### 6) Point your browser to:
 `http://localhost:5000`
 
-## Time Spent: 6.5 hours
+## Time Spent: 7.5 hours
 
 ## Difficulties
 * I had not coded in ReactJS much previously, so I ran into a few newbie issues (CORS-related, passing data from ReactJS-to-Flask, library installations, etc.).  This project was a great learning experience!
-* The JQuery CDN was up and down for several hours, so I downloaded a copy of the file locally.
+* The JQuery CDN was up and down for a couple hours, so I downloaded a copy of the file locally.
 * I am currently having an issue with passing the current Photo's information back to the server, to Fave/UnFave.
 
 ### General
 * Update README
 
 ### Design
-* Grab a different emplate
+* Consider different templates
 * Replace logo with something that includes the name.
 * Integrate react-gallery or a better grid layout overall.
 
