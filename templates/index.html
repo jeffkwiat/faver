@@ -4,12 +4,12 @@
         {% include "header.html" %}
         {% if not session.get('user') %}
         <div class="jumbotron">
-        <h1>Your Favorite Photos in One Place.</h1>
-        <p class="lead">The easiest way to store your favorite Flickr photos</p>
+        <h1>All Your Favorite Things in One Place.</h1>
+        <p class="lead">We're starting with Flickr, but the list grows...</p>
 
 
 
-        <p><a class="btn btn-lg btn-success" href="{{ url_for('auth.signup') }}" role="button">Fave us Today!</a></p>
+        <p><a class="btn btn-lg btn-success" href="{{ url_for('auth.signup') }}" role="button">Do Us a Favor, Sign Up!</a></p>
         </div>
         {% else %}
         <div id="data-container">
@@ -19,9 +19,9 @@
         {% if not session.get('user') %}
       <div class="row marketing">
         <div class="col-md-6">
-          <h3>Favorite photos</h3>
+          <h3>Get started</h3>
           <p>It's so easy to use Faver: just create an account and you can start
-          keeping track of your favorite photos from Flickr!</p>
+          keeping track of your favorite things from around the web!</p>
         </div>
 
         <div class="col-md-6">

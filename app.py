@@ -22,7 +22,6 @@ db.create_all(app=app)
 # migrate database, if necessary
 migrate = Migrate(app, db, render_as_batch=True)
 
-
 @app.route('/')
 def home():
     '''
@@ -38,6 +37,11 @@ def favorites():
     :return:
     '''
     return render_template('favorites.html')
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 
 if __name__ == '__main__':
     app.run()

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block container %}
+    <div class="container">
+    {% include "header.html" %}
+        <h1>Page Not Found</h1>
+        <div class="row">
+            <a href="/">Take me home!!</a>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <img style="width: 100%" src="{{ url_for('static', filename='images/404.jpg') }}" />
+        </div>
+        <h3>Hunt–Lenox Globe</h3>
+        <div class="row">
+            <p>The Hunt–Lenox Globe or Lenox Globe, dating from ca. 1510,[1][2] is the second- or third-oldest known terrestrial globe, after the Erdapfel of 1492. It is housed by the Rare Book Division of the New York Public Library.</p>
+            <p>It is notable as one of only two known instances of a historical map actually using the phrase HC SVNT DRACONES (in Latin hic sunt dracones means "here are dragons".)</p>
+        </div>
+        <div class="row">
+            <a href="https://en.wikipedia.org/wiki/Hunt%E2%80%93Lenox_Globe" target="_blank">Wikipedia</a>
+        </div>
+    </div>
+
+{% endblock %}
