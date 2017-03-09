@@ -9,7 +9,17 @@
 
 `pip install -r requirements.txt`
 
-## Known Issues
+`export FLASK_APP=app.py`
+
+`export FLASK_DEBUG=1`
+
+`flask run`
+
+## Time Spent: 6.0 hours
+
+## Difficulties
+* I had not coded in ReactJS much previously, so I ran into a few newbie issues (CORS-related, passing data from ReactJS-to-Flask, library installations, etc.).  This project was a great learning experience!
+* I initially attempted a all-in solution, involving Docker containers on AWS, with React/Redux/Flask/MaterialUI, but I realized it was a bit much for this project, so I scaled it back and focused on the functionality.
 
 ### General
 * Update README
