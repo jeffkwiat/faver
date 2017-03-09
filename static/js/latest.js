@@ -13,10 +13,34 @@ const LatestEntries = React.createClass({
         };
     },
 
+    handleFavoriteClick: function(e) {
+        e.preventDefault();
+        var title = this.state.title;
+        var options = this.state.options;
+
+        var data = {'title': title, options: options.map(function(x){return x.name})};
+        var url =  origin + '/api/polls'
+
+        // make post request
+        $.ajax({
+          url: url,
+          dataType: 'json',
+          type: 'POST',
+          data: JSON.stringify(data),
+          contentType: 'application/json; charset=utf-8',
+          success: function(data){
+            alert(data.message);
+          }.bind(this),
+          error: function(xhr, status, err){
+            alert('Poll creation failed: ' + err.toString());
+          }.bind(this)
+        });
+      },
+
     render: function(){
         const photos = this.props.photos.map((photo, index) =>
-            <div>
-                <div className="row" key={photo.id}>
+            <div key={photo.id}>
+                <div className="row">
                     <div className="col-md-8">
                         <h4>{photo.title}</h4>
                         <a href={photo.link}><img src={photo.media} alt={photo.title} /></a>
