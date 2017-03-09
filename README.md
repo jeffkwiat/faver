@@ -1,13 +1,18 @@
-# starr v0.1.0
-#####Your Favorite Flickr Photos in One Place
+# Faver v0.1.0
+####Your Favorite Flickr Photos in One Place
 
 ## Installation
 
-## Where to go from here?
+`git clone https://github.com/jeffkwiat/virta-flickr.git`
+
+`source bin/activate`
+
+`pip install -r requirements.txt`
+
+## Known Issues
 
 ### General
 * Update README
-* Update requirements.txt
 
 ### Design
 * Grab a Template
