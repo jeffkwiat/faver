@@ -3,8 +3,7 @@ const Route = ReactRouter.Route;
 const browserHistory = ReactRouter.browserHistory;
 
 //global variable to store origin url (e.g http://localhost:5000)
-const origin = window.location.origin;
-const favorites_api =  origin + '/api/v1.0/favorites';
+const favorites_api =  window.location.origin + '/api/v1.0/favorites';
 
 const FavoriteEntry = React.createClass({
     getInitialState: function(){
