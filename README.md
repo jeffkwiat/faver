@@ -3,39 +3,56 @@
 
 ## Installation
 
+#### 2) Setup a virtualenv:
+`$ sudo pip install virtualenv`
+
+`$ virtualenv -p python3 virta-flickr`
+
+`$ cd virta-flickr`
+
+`$ source bin/activate`
+
+#### 2) Clone the repository:
 `git clone https://github.com/jeffkwiat/virta-flickr.git`
 
-`source bin/activate`
-
+#### 3) Clone the repository:
 `pip install -r requirements.txt`
 
+#### 4) Setup your environment variables:
 `export FLASK_APP=app.py`
 
 `export FLASK_DEBUG=1`
 
+#### 5) Run the app:
 `flask run`
 
-## Time Spent: 6.0 hours
+#### 6) Point your browser to:
+`http://localhost:5000`
+
+## Time Spent: 6.5 hours
 
 ## Difficulties
 * I had not coded in ReactJS much previously, so I ran into a few newbie issues (CORS-related, passing data from ReactJS-to-Flask, library installations, etc.).  This project was a great learning experience!
-* I initially attempted a all-in solution, involving Docker containers on AWS, with React/Redux/Flask/MaterialUI, but I realized it was a bit much for this project, so I scaled it back and focused on the functionality.
+* The JQuery CDN was up and down for several hours, so I downloaded a copy of the file locally.
+* I am currently having an issue with passing the current Photo's information back to the server, to Fave/UnFave.
 
 ### General
 * Update README
 
 ### Design
-* Grab a Template
-* Create an actual logo
-* Integrate react-gallery or a better grid layout overall
+* Grab a different emplate
+* Replace logo with something that includes the name.
+* Integrate react-gallery or a better grid layout overall.
 
 ### Functionality
-* Review replacing $.ajax with axios (et. al.)?
+* Consider replacing $.ajax with axios (et. al.)?
 * Integrate Flask-Rest
 * Consider moving JQuery back to a CDN
 
 ### Testability
-* Add Tests
+* Add more pytests
+* Add mocha for javascript tests
+* Improve coverage
 
 ### Scalability
 * Migrate to PostgreSQL
