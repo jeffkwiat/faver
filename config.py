@@ -1,4 +1,4 @@
-#configuration file for FlickrFav
+#configuration file for starr
 import os
 
 DB_PATH = os.path.join(os.path.dirname(__file__), 'flickr.db')

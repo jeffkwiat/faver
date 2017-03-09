@@ -1,0 +1,17 @@
+<div class="header clearfix">
+    <nav>
+      <ul class="nav nav-pills pull-right">
+
+        {% if session.get('user') %}
+          <!-- <li class="welcome-message">Hey {{ session['user']}}!</li> -->
+          <li role="presentation"><a href="{{ url_for('favorites') }}">Favorites</a></li>
+          <li role="presentation"><a href="{{ url_for('auth.logout') }}">Logout</a></li>
+        {% endif %}
+
+        <li role="presentation">
+            <a href="https://github.com/jeffkwiat/virta-flickr"><img src="{{ url_for('static', filename='images/github.png') }}" /></a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="flkr-header"><a href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" />  Faver</a></h1>
+  </div>

@@ -1,70 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
-
-    <title>FlickrFav!</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="static/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="static/css/jumbotron-narrow.css" rel="stylesheet">
-
-    <script src="static/js/ie-emulation-modes-warning.js"></script>
-  </head>
-
-  <body>
-
+{% extends "base.html" %}
+{% block container %}
     <div class="container">
-      <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            
-            {% if session.get('user') %}
-            <li class="welcome-message">Hey {{ session['user']}}!</li>
-              <li role="presentation"><a href="{{ url_for('logout') }}">Logout</a></li>
-            {% endif %}
-
-            <li role="presentation"><a href="https://github.com/jeffkwiat/virta-flickr">Github</a></li>
-          </ul>
-        </nav>
-        <a href="/"><img src="static/images/logo.png" /></a>
-      </div>
-
-      <div class="jumbotron">
-        <h1>It's easier with FlickrFav!</h1>
+        {% include "header.html" %}
+        {% if not session.get('user') %}
+        <div class="jumbotron">
+        <h1>Your Favorite Photos in One Place.</h1>
         <p class="lead">The easiest way to store your favorite Flickr photos</p>
 
-        
-        {% if not session.get('user') %}
-        <p><a class="btn btn-lg btn-success" href="{{ url_for('signup') }}" role="button">Sign up today</a></p>
-        {% else %}
-        <p><a class="btn btn-lg btn-success" href="/polls" role="button">Create a poll</a></p>
-        {% endif %}
-        
-      </div>
 
+
+        <p><a class="btn btn-lg btn-success" href="{{ url_for('auth.signup') }}" role="button">Fave us Today!</a></p>
+        </div>
+        {% else %}
+        <div id="data-container">
+        </div>
+        {% endif %}
+
+        {% if not session.get('user') %}
       <div class="row marketing">
-        <div class="col-lg-6">
+        <div class="col-md-6">
           <h3>Favorite photos</h3>
-          <p>It's so easy to use FlickrFav, just create an account and you can start
+          <p>It's so easy to use Faver: just create an account and you can start
           keeping track of your favorite photos from Flickr!</p>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-md-6">
           <h3 class="form-header">Login</h3>
           
-          <form method="post" action="{{ url_for('login') }}">
+          <form method="post" action="{{ url_for('auth.login') }}">
           {% with messages = get_flashed_messages(with_categories=true) %}
               {% if messages %}
                   {% for category, message in messages %}
@@ -85,12 +48,7 @@
           </form>
         </div>
       </div>
+        {% endif %}
 
-      <footer class="footer">
-        <p>&copy; 2017 FlickrFav</p>
-      </footer>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="static/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
-</html>
+    </div>
+{% endblock %}

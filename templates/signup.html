@@ -1,34 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
-
-    <title>Signup To FlickrFav!</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="{{ url_for('static', filename='css/ie10-viewport-bug-workaround.css') }}" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="{{ url_for('static', filename='css/signin.css') }}" rel="stylesheet" />
-
-    <script src="{{ url_for('static', filename='js/ie-emulation-modes-warning.js') }}"></script>
-
-  </head>
-
-  <body>
+{% extends "base.html" %}
+{% block container %}
 
     <div class="container">
-
-        <form class="form-signin" method="post" action="{{ url_for('signup') }}">
+        {% include "header.html" %}
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+        <form class="form-signin" method="post" action="{{ url_for('auth.signup') }}">
         <h2 class="form-signin-heading" align="center">Sign up</h2>
         <div class="form-group has-success">
           <label for="email" class="sr-only">Email address</label>
@@ -46,10 +24,9 @@
         </div>
         <button class="btn btn-lg btn-success btn-block" type="submit">Sign up</button>
       </form>
-
+</div>
+            <div class="col-md-4"></div>
+        </div>
     </div>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{{ url_for('static', filename='js/ie10-viewport-bug-workaround.js') }}"></script>
-  </body>
-</html>
+{% endblock %}

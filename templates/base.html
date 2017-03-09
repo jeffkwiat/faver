@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+    <title>Faver</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="{{ url_for('static', filename='css/ie10-viewport-bug-workaround.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/jumbotron-narrow.css') }}" rel="stylesheet">
+
+  <!-- JQuery -->
+  <script src="{{ url_for('static', filename='js/jquery-3.1.1.min.js') }}"></script>
+
+    <!-- React JS -->
+    <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/react-router@2.8.1/umd/ReactRouter.min.js"></script>
+    <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
+    <script type="text/babel" src="{{ url_for('static', filename='js/favorites.js') }}"></script>
+      <script type="text/babel" src="{{ url_for('static', filename='js/latest.js') }}"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+
+    <script src="{{ url_for('static', filename='js/ie-emulation-modes-warning.js') }}"></script>
+  </head>
+
+  <body>
+        {% block container %}{% endblock %}
+        <p>&nbsp;</p>
+        <footer class="footer"></footer>
+        <p style="text-align: center">Jeff Kwiat | <a href="mailto:j@jeffkwiat.com">j@jeffkwiat.com</a> | 980.226.8766</p>
+        <p style="text-align: center">&copy; 2017 Faver</p>
+        </footer>
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="{{ url_for('static', filename='js/ie10-viewport-bug-workaround.js') }}"></script>
+  </body>
+</html>
