@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b978f0e5-8e93-4715-8bb9-bf776cd1f22e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/activate" afterPath="$PROJECT_DIR$/bin/activate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/activate.csh" afterPath="$PROJECT_DIR$/bin/activate.csh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/activate.fish" afterPath="$PROJECT_DIR$/bin/activate.fish" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy_install" afterPath="$PROJECT_DIR$/bin/easy_install" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/easy_install-3.5" afterPath="$PROJECT_DIR$/bin/easy_install-3.5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/flask" afterPath="$PROJECT_DIR$/bin/flask" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/pip" afterPath="$PROJECT_DIR$/bin/pip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/pip3" afterPath="$PROJECT_DIR$/bin/pip3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/pip3.5" afterPath="$PROJECT_DIR$/bin/pip3.5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/python-config" afterPath="$PROJECT_DIR$/bin/python-config" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/wheel" afterPath="$PROJECT_DIR$/bin/wheel" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pip-selfcheck.json" afterPath="$PROJECT_DIR$/pip-selfcheck.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.html" afterPath="$PROJECT_DIR$/templates/header.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -122,12 +108,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="375">
-                <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+              <first_editor relative-caret-position="330">
+                <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -218,8 +204,8 @@
         <option value="$PROJECT_DIR$/static/js/favorites.js" />
         <option value="$PROJECT_DIR$/static/js/latest.js" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -839,17 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="375">
-            <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -872,9 +847,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="330">
+            <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

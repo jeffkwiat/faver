@@ -29,8 +29,6 @@
 #### 6) Point your browser to:
 `http://localhost:5000`
 
-## Time Spent: 6.5 hours
-
 ## Difficulties
 * I had not coded in ReactJS much previously, so I ran into a few newbie issues (CORS-related, passing data from ReactJS-to-Flask, library installations, etc.).  This project was a great learning experience!
 * The JQuery CDN was up and down for several hours, so I downloaded a copy of the file locally.
