@@ -1,4 +1,4 @@
-#!/Users/jeffkwiat/Dropbox/Personal/code/virta/virta-flickr/bin/python
+#!/Users/jeffkwiat/Dropbox/Personal/code/faver/bin/python
 
 import sys
 import getopt

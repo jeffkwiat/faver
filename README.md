@@ -6,14 +6,14 @@
 #### 2) Setup a virtualenv:
 `$ sudo pip install virtualenv`
 
-`$ virtualenv -p python3 virta-flickr`
+`$ virtualenv -p python3 faver`
 
-`$ cd virta-flickr`
+`$ cd faver`
 
 `$ source bin/activate`
 
 #### 2) Clone the repository:
-`git clone https://github.com/jeffkwiat/virta-flickr.git`
+`git clone https://github.com/jeffkwiat/faver.git`
 
 #### 3) Clone the repository:
 `pip install -r requirements.txt`
