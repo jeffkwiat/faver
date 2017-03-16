@@ -1,5 +1,5 @@
 # Faver v0.1.0
-####Your Favorite Flickr Photos in One Place
+####All Your Favorite Things in One Place
 
 ## Installation
 
@@ -28,35 +28,3 @@
 
 #### 6) Point your browser to:
 `http://localhost:5000`
-
-## Difficulties
-* I had not coded in ReactJS much previously, so I ran into a few newbie issues (CORS-related, passing data from ReactJS-to-Flask, library installations, etc.).  This project was a great learning experience!
-* The JQuery CDN was up and down for several hours, so I downloaded a copy of the file locally.
-* I am currently having an issue with passing the current Photo's information back to the server, to Fave/UnFave.
-
-### General
-* Update README
-
-### Design
-* Grab a different emplate
-* Replace logo with something that includes the name.
-* Integrate react-gallery or a better grid layout overall.
-
-### Functionality
-* Consider replacing $.ajax with axios (et. al.)?
-* Integrate Flask-Rest
-* Consider moving JQuery back to a CDN
-
-### Testability
-* Add more pytests
-* Add mocha for javascript tests
-* Improve coverage
-
-### Scalability
-* Migrate to PostgreSQL
-* Migrate to AWS
-* Add Redux
-
-### Security
-* Integrate Flask-Login
-* We're using uuid.uuid4() which generates a random UUID.  Should we use something different?
