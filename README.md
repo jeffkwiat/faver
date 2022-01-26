@@ -1,4 +1,6 @@
 # Faver v0.1.0
+
+[![Git](https://app.soluble.cloud/api/v1/public/badges/ff85fe59-3370-48a8-89f7-00fd475ad650.svg?orgId=498499820349)](https://app.soluble.cloud/repos/details/github.com/jeffkwiat/faver?orgId=498499820349)  
 ####All Your Favorite Things in One Place
 
 ## Installation
